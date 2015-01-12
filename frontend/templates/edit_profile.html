@@ -1,0 +1,90 @@
+
+        <title>Заполнение профиля</title>
+
+        <form id="profile_data" ng-submit="set_profile()">
+
+            Фото                                   <input type="file" ng-file-select="onFileSelect($files)">
+
+            <br>
+
+            <label>Пол</label>     М               <input type="radio" name="sex" ng-model="profile.sex" value="0" checked>
+                                   Ж               <input type="radio" name="sex" ng-model="profile.sex" value="1">
+
+
+            <hr>
+
+
+            <label>Имя</label>                     <input type="text" name="first_name" ng-model="profile.firstName">
+            <label>Фамилия</label>                 <input type="text" name="last_name" ng-model="profile.lastName">
+
+
+            <hr>
+
+
+            <label>Любимое место</label>           <input type="file">
+                                                   <textarea name="favorite_place" ng-model="profile.favorite_place"></textarea>
+
+
+            <hr>
+
+
+            <label>Город</label>                   <select name="city" ng-model="profile.City">
+                                                        <option>Санкт-Петербург</option>
+                                                   </select>
+
+
+            <hr>
+
+
+            <label>Отношение к алкоголю</label>    <select name="alcohol" ng-model="profile.Alcohol">
+                                                        <option value="0">Негативное</option>
+                                                   </select>
+
+            <label>Отношение к курению</label>     <select name="smoking" ng-model="profile.Smoking">
+                                                        <option value="0">Негативное</option>
+                                                   </select>
+
+            <label>Мировоззрение</label>           <select name="world_view" ng-model="profile.WorldView">
+                                                        <option value="0">Буддизм</option>
+                                                   </select>
+
+            <br><br>
+
+            Образование                            <input type="text" name="education" ng-model="profile.Study">
+
+            Сфера деятельности                     <input type="text" name="career" ng-model="profile.Career">
+
+            Сексуальный опыт                       <select name="virgin" ng-model="profile.virgin">
+                                                        <option  value="0">Девственник(ца)</option>
+                                                        <option  value="1">Не более 5 контактов</option>
+                                                        <option  value="2">Активно практикую</option>
+                                                   </select>
+
+            <hr>
+
+
+            Фотографии                             <input type="file">
+
+
+            <hr>
+
+
+            <label>О себе</label>                  <textarea name="bio" ng-model="profile.Bio"></textarea>
+            <label>Мой идеал</label>               <textarea name="my_ideal" ng-model="profile.Ideal"></textarea>
+
+            <hr>
+
+            <label>Цель знакомства</label>         <select name="SearchType" ng-model="profile.SearchType">
+                                                        <option value="0">Дружба</option>
+                                                        <option value="1">Секс</option>
+                                                        <option value="2">Любовь</option>
+                                                   </select>
+
+
+            <hr>
+
+
+            <input type="submit" value="send">
+
+        </form>
+

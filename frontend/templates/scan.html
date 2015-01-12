@@ -1,0 +1,35 @@
+<section>
+    <div>
+        <div class="refresh" align="right"><a href ng-click="refresh()">Получить новый список</a></div>
+        <section ng-if="users">
+            <div ng-repeat="user in users"  align="center">
+                <table border ='1px;'>
+                    <tr>
+                        <td colspan="3">
+                            <a ng-href="/id{{user.UserID}}">{{user.FirstName}} {{user.LastName}}</a>
+                        </td>
+                        <td>Любимое место</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Фотки: {{user.Photos}}
+                        </td>
+                        <td>
+                            Образование: {{user.Study}}<br>
+                            Карьера: {{user.Career}}<br>
+                            Мировоззрение{{user.WorldView}}
+                        </td>
+                        <td>
+                            Курение: {{user.Smoking}}<br>
+                            Сексуальный опыт: {{user.Virgin}}<br>
+                            Алкоголь: {{user.Alcohol}}
+                        </td>
+                        <td>
+                            <p>{{user.Favorite_Text}}</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+</section>

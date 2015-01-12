@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <title></title>
+</head>
+<body ng-controller="TouchController">
+
+    <section ng-hide="touch_1_complete" ng-init="init()">
+        <div ng-repeat="slide in slides">
+            <center>
+                <div ng-show="slide.selected">
+                    <p>{{slide.Image}}</p>
+                    <p>{{slide.Description}}</p>
+                    <p>{{slide.Name}}</p>
+                </div>
+            </center>
+        </div>
+        <center>
+
+             <a href ng-click="next(1)">Это я</a> |
+             <a href ng-click="next(2)">Не я</a> |
+             <a href ng-click="next(3)">Пропустить</a>
+        </center>
+    </section>
+
+    <section ng-show="touch_1_complete">
+        <center>
+        Выберете {{to_select_num}} черты черты характера, которые Вам ближе всего:<br>
+            <a href ng-show="to_select_num==0" ng-click="send_data()">Далее</a><br>
+        <div ng-repeat="slide in selected_slides">
+                <div>
+                    <p>{{slide.Image}}</p>
+                    <p>{{slide.Description}}</p>
+                    <p>{{slide.Name}}</p>
+                    <a href ng-click="choice($index)">Выбрать</a>
+                </div>
+        </div>
+        </center>
+    </section>
+</body>
+</html>

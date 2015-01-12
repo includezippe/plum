@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600&subset=latin,cyrillic);
+.logo {
+    width: 140px;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: 25px;
+}
+.logobg {
+    width: 140px;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: 23px;
+    opacity: 0.7;
+}
+
+body {
+    background: #F7D5EA;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+}
+
+#index_text {
+    position: absolute;
+    top: 140px;
+    color: #25001D;
+    left: 50%;
+    margin-left:-365px;
+    background: #FFF;
+    width: 680px;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: justify;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#index_footer {
+    position: absolute;
+    top: 388px;
+    left: 50%;
+    margin-left: -365px;
+    background: #E6E6E6;
+    width: 680px;
+    border-radius: 5px;
+    color: #928D91;
+    z-index: -1;
+    padding: 25px;
+    text-align: justify;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.l {
+    display: inline-block;
+    margin-left:160px;
+    color:#999;
+}
+
+#login {
+    background: #E6E6E6;
+    border-radius: 5px;
+    width: 155px;
+    text-align: center;
+    top: 99px;
+    line-height: 30px;
+    left: 50%;
+    margin-left: 210px;
+    position: absolute;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #25001D;
+    font-weight: 400;
+}
+
+a:hover {
+    border-bottom: 1px dotted;
+}
+
+video#bgvid {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: #F3F3F3;
+    background-size: cover;
+}
+
+.bglayer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -99;
+    opacity: 0.7;
+    background: #F7D5EA;
+    background-size: cover;
+}
+
+video { display: block; }
+
+button {
+    border: none;
+    background: none;
+}
+
+a {
+    cursor: pointer;
+    cursor: hand;
+}

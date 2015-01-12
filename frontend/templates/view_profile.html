@@ -1,0 +1,36 @@
+
+<section ng-show="user">
+
+    <table border ='1px;'>
+        <tr>
+            <td colspan="3">
+               {{user.FirstName}} {{user.LastName}}
+            </td>
+            <td>Любимое место</td>
+        </tr>
+        <tr>
+            <td>
+                Фотки: {{user.Photos}}
+            </td>
+            <td>
+                Образование: {{user.Study}}<br>
+                Карьера: {{user.Career}}<br>
+                Мировоззрение{{user.WorldView}}
+            </td>
+            <td>
+                Курение: {{user.Smoking}}<br>
+                Сексуальный опыт: {{user.Virgin}}<br>
+                Алкоголь: {{user.Alcohol}}
+                <p>{{user.Career}}</p>
+                <p>{{user.Bio}}</p>
+                <p>{{user.Ideal}}</p>
+                <p>{{user.SearchType}}</p>
+                <p>{{user.Virgin}}</p>
+            </td>
+            <td>
+                <p>{{user.Favorite_Text}}</p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+</section>
